@@ -10,7 +10,7 @@ public class Util {
         }
 
         byte[] cipher_byte;
-        StringBuilder sb = null;
+        StringBuilder sb = new StringBuilder();
         try{
             MessageDigest md = MessageDigest.getInstance("SHA-256");
             md.update(password.getBytes());
